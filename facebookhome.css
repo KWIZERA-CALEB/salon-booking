@@ -1,0 +1,428 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.top-menu{
+    background-color: #0B2447;
+    height: 70px;  /* Update here*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fb-logo-cont img{
+    width: 50px;
+}
+
+.top-menu-left{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    gap: 10px;
+    padding-right: 5px;
+}
+
+.fb-search-cont button {
+    margin-right: -5px;
+    padding-left: 17px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #19376D;
+    color: #fff;
+    border-style: none;
+    outline: none;
+}
+
+.fb-search-cont input {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 55px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #19376D;
+    border-style: none;
+    outline: none;
+    color: #fff;
+    font-family: Comfortaa;
+}
+
+.fb-search-cont input::placeholder{
+    font-weight: 700;
+    font-family: Comfortaa;
+}
+
+.fb-search-cont{
+    display: flex;
+    align-items: center;
+}
+
+.top-menu-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+    height: 70px;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-menu-middle a{
+    text-decoration: none;
+    color: #B6BBC4;
+    transition: color 0.15s;
+}
+
+.top-menu-middle a:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+.top-menu-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 8px;
+    height: 70px;
+    font-size: 25px;
+    gap: 25px;
+}
+
+.top-menu-right-item-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.top-menu-right-item1 a{
+    background-color: rgba(12,12,12,0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #B6BBC4;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+.top-menu-right-item1 a:hover{
+    opacity: 1;
+}
+
+.top-menu-right-item2 a{
+    background-color: rgba(12,12,12,0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #B6BBC4;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+
+}
+
+.top-menu-right-item2 a:hover{
+    opacity: 1;
+}
+
+.top-menu-right-item3 a{
+    background-color: rgba(12,12,12,0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #B6BBC4;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+.top-menu-right-item3 a:hover{
+    opacity: 1;
+}
+
+.hover-menu-tooltip{
+    position: absolute;
+    display: none;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+
+.hover-menu-tooltip button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: Comfortaa;
+    border-style: none;
+}
+
+.top-menu-right-item1:hover~.hover-menu-tooltip{
+    display: block;
+}
+
+.top-menu-right-item2:hover~.hover-menu-tooltip{
+    display: block;
+}
+
+.top-menu-right-item3:hover~.hover-menu-tooltip{
+    display: block;
+}
+
+
+/*Individual styles for account tooltip*/
+.hover-menu-tooltip-acc{
+    position: absolute;
+    display: none;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+
+.hover-menu-tooltip-acc button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: Comfortaa;
+    border-style: none;
+}
+
+.top-menu-right-item-profile:hover~.hover-menu-tooltip-acc{
+    display: block;
+}
+
+/*Bottom section styles*/
+
+.bottom-section-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-sub-menu{
+    background-color: green;
+    height: 707px; /*Update here */
+    width: 360px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-middle-section{
+    background-color: aqua;
+    height: 707px; /*Update here */
+    width: 730px;
+    overflow-y: scroll;
+}
+
+.bottom-right-section{
+    background-color: aqua;
+    height: 707px; /*Update here */
+    width: 350px;
+    overflow-y: scroll;
+}
+
+.left-sub-menu-bottom{
+    background-color: red;
+    width: 340px;
+    height: 400px;
+}
+
+.left-sub-menu-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-sub-menu-bottom-cont1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 14px;
+}
+
+.shortcuts-word-cont p{
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.edit-word-cont p{
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.edit-word-cont p a{
+    text-decoration: none;
+    color: #0000ff;
+}
+
+.edit-word-cont p:hover{
+    background-color: rgba(12,12,12,0.5);
+    cursor: pointer;
+}
+
+.left-sub-menu-bottom-cont2-item1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Comfortaa;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.left-sub-menu-bottom-cont2-item1:hover{
+    background-color: rgba(12,12,12,0.5);
+    cursor: pointer;
+}
+
+.left-sub-menu-bottom-cont2-item1-right a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.left-sub-menu-bottom-cont2-item1-left img{
+    width: 50px;
+    height: 50px;
+}
+
+.left-sub-menu-bottom-cont2-item2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Comfortaa;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+
+.left-sub-menu-bottom-cont2-item2:hover{
+    background-color: rgba(12,12,12,0.5);
+    cursor: pointer;
+}
+
+.left-sub-menu-bottom-cont2-item2-right a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-sub-menu-bottom-cont2-item3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Comfortaa;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+
+.left-sub-menu-bottom-cont2-item3:hover{
+    background-color: rgba(12,12,12,0.5);
+    cursor: pointer;
+}
+
+.left-sub-menu-bottom-cont2-item3-right a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-sub-menu-bottom-cont2-item4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Comfortaa;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+
+.left-sub-menu-bottom-cont2-item4:hover{
+    background-color: rgba(12,12,12,0.5);
+    cursor: pointer;
+}
+
+.left-sub-menu-bottom-cont2-item4-right a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-sub-menu-bottom-cont2-item5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Comfortaa;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+
+.left-sub-menu-bottom-cont2-item5:hover{
+    background-color: rgba(12,12,12,0.5);
+    cursor: pointer;
+}
+
+.left-sub-menu-bottom-cont2-item5-right a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-sub-menu-bottom-cont3{
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
