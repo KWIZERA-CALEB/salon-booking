@@ -1,10 +1,10 @@
-package com.salon.booking;
+package com.supersaloon.SuperSalon;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BookingApplicationTests {
+class SuperSalonApplicationTests {
 
 	@Test
 	void contextLoads() {
